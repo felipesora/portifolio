@@ -1,9 +1,11 @@
-import Header from "./components/Header"
+import Cabecalho from "./components/Cabecalho"
+import Inicio from "./components/Inicio"
 
 function App() {
   return (
     <>
-      <Header />
+      <Cabecalho />
+      <Inicio />
     </>
   )
 }
