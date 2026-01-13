@@ -1,6 +1,6 @@
-import Logo from "/assets/images/logo.png";
+import Logo from "../../assets/images/logo.png";
 
-const Header = () => {
+const Cabecalho = () => {
 
     return (
         <header className="bg-[var(--color-primary)] py-9 px-8 flex justify-between items-center border-b border-b-[#292929]">
@@ -36,4 +36,4 @@ const Header = () => {
     
 }
 
-export default Header;
+export default Cabecalho;
