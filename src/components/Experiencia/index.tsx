@@ -1,3 +1,5 @@
+import CardCarreira from "./CardCarreira";
+import { itensCarreira } from "./data";
 import IconeCarreira from "./IconeCarreira";
 
 const Experiencia = () => {
@@ -12,17 +14,47 @@ const Experiencia = () => {
             <div className="flex flex-col gap-8">
                 <h3 className="text-2xl font-bold">Experiência</h3>
 
-                <div>
-                    <IconeCarreira tipo="experiencia" />
-                </div>
+                {itensCarreira
+                    .filter((item) => item.tipo === "experiencia")
+                    .map((item) => (
+                        <div key={item.id} className="flex items-start gap-6">
+
+                            <div className="shrink-0">
+                                <IconeCarreira tipo={item.tipo} />
+                            </div>
+
+                            <CardCarreira 
+                                tipo={item.tipo}
+                                data={item.data}
+                                titulo={item.titulo} 
+                                instituicao={item.instituicao}
+                                descricao={item.descricao}
+                            />
+                        </div>
+                ))}
             </div>
 
             <div className="flex flex-col gap-8">
                 <h3 className="text-2xl font-bold">Educação</h3>
 
-                <div>
-                    <IconeCarreira tipo="educacao" />
-                </div>
+                {itensCarreira
+                    .filter((item) => item.tipo === "educacao")
+                    .map((item) => (
+                        <div key={item.id} className="flex items-start gap-6">
+
+                            <div className="shrink-0">
+                                <IconeCarreira tipo={item.tipo} />
+                            </div>
+
+                            <CardCarreira 
+                                tipo={item.tipo}
+                                data={item.data}
+                                titulo={item.titulo} 
+                                instituicao={item.instituicao}
+                                descricao={item.descricao}
+                            />
+                        </div>
+                ))}
             </div>
         </section>
     );
