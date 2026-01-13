@@ -3,8 +3,52 @@ import IconeEmail from "../../assets/icons/icone-email.png";
 import IconeDownloadBranco from "../../assets/icons/icone-download-branco.png";
 import IconeDownloadPreto from "../../assets/icons/icone-download-preto.png";
 import IconeScroll from "../../assets/icons/icone-scroll.png";
+import { useEffect, useState } from "react";
 
 const Inicio = () => {
+    const texts = [
+        "Engenheiro de Software",
+        "Desenvolvedor Full Stack",
+        "Formado em Análise e Desenvolvimento de Sistemas"
+    ];
+
+    const [textIndex, setTextIndex] = useState<number>(0);
+    const [charIndex, setCharIndex] = useState<number>(0);
+    const [displayText, setDisplayText] = useState<string>("");
+    const [isDeleting, setIsDeleting] = useState<boolean>(false);
+
+    useEffect(() => {
+        const currentText = texts[textIndex];
+        let timeout: ReturnType<typeof setTimeout>;
+
+        if (!isDeleting && charIndex < currentText.length) {
+            // digitando
+            timeout = setTimeout(() => {
+                setDisplayText(currentText.substring(0, charIndex + 1));
+                setCharIndex(charIndex + 1);
+            }, 100);
+        }
+        else if (isDeleting && charIndex > 0) {
+            // apagando
+            timeout = setTimeout(() => {
+                setDisplayText(currentText.substring(0, charIndex - 1));
+                setCharIndex(charIndex - 1);
+            }, 60);
+        }
+        else if (!isDeleting && charIndex === currentText.length) {
+            // pausa antes de apagar
+            timeout = setTimeout(() => {
+                setIsDeleting(true);
+            }, 1500);
+        }
+        else if (isDeleting && charIndex === 0) {
+            setIsDeleting(false);
+            setTextIndex((prev) => (prev + 1) % texts.length);
+        }
+
+        return () => clearTimeout(timeout);
+    }, [charIndex, isDeleting, textIndex]);
+    
     return (
         <section style={{ backgroundImage: `url(${HeroBg})` }} className="relative bg-cover bg-center">
             
@@ -15,7 +59,10 @@ const Inicio = () => {
                 <div className="flex flex-col items-center gap-3">
                     <h2 className="text-white font-bold text-lg">OLÁ, SEJA BEM VINDO!</h2>
                     <h1 className="text-white font-bold text-6xl">Eu sou Felipe Sora</h1>
-                    <h2 className="text-white font-bold text-2xl">Engenheiro de Software</h2>
+                    <h2 className="text-white font-bold text-2xl min-h-[32px]">
+                        {displayText}
+                        <span className="animate-pulse">|</span>
+                    </h2>
                 </div>
 
                 <div className="flex gap-5">
