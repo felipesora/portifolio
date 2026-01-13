@@ -50,7 +50,7 @@ const Inicio = () => {
     }, [charIndex, isDeleting, textIndex]);
     
     return (
-        <section style={{ backgroundImage: `url(${HeroBg})` }} className="relative bg-cover bg-center">
+        <section style={{ backgroundImage: `url(${HeroBg})` }} className="relative bg-cover bg-center bg-fixed">
             
             <div className="absolute inset-0 bg-[#111111]/90"></div>
 
