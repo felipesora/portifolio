@@ -22,7 +22,7 @@ const CardCategoriaHabilidade = ({ categoria }: CardCategoriaHabilidadeProps) =>
     const Titulo = tituloPorCategoria[categoria];
     
     return (
-        <div className="bg-[#EBEBEB] border border-transparent px-7 py-6 rounded-[10px] shadow-sm flex flex-col gap-3.5 w-96 hover:border-[#111111] hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out">
+        <div className="bg-[#EBEBEB] border border-transparent px-7 py-6 rounded-[10px] shadow-sm flex flex-col gap-3.5 min-w-[320px] w-[30%] hover:border-[#111111] hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out">
             
             <div className="flex gap-2 items-center">
                 <img src={Icone} alt={`ícone de ${Titulo}`} />
@@ -31,7 +31,7 @@ const CardCategoriaHabilidade = ({ categoria }: CardCategoriaHabilidadeProps) =>
 
             <div className="bg-[#DEE2E6] h-0.5 w-full"></div>
 
-            <div className="flex flex-wrap justify-between gap-3">
+            <div className="flex flex-wrap gap-3">
                 {habilidades
                     .filter((habilidade) => habilidade.categoria === categoria)
                     .map((habilidade) => (
