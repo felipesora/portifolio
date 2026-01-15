@@ -1,5 +1,6 @@
 import Cabecalho from "./components/Cabecalho"
 import Experiencia from "./components/Experiencia"
+import Habilidades from "./components/Habilidades"
 import Inicio from "./components/Inicio"
 import Sobre from "./components/Sobre"
 
@@ -10,6 +11,7 @@ function App() {
       <Inicio />
       <Sobre />
       <Experiencia />
+      <Habilidades />
     </>
   )
 }
