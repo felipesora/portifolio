@@ -1,4 +1,5 @@
 import CardProjeto from "./CardProjeto";
+import { projetos } from "./dataProjetos";
 
 const Projetos = () => {
     return(
@@ -10,9 +11,18 @@ const Projetos = () => {
             </div>
 
             <div className="flex flex-wrap justify-between gap-y-10">
-                <CardProjeto />
-                <CardProjeto />
-                <CardProjeto />
+                {projetos.map((projeto) => (
+                    <CardProjeto
+                        key={projeto.id}
+                        imagem={projeto.imagem}
+                        titulo={projeto.titulo}
+                        descricao={projeto.descricao}
+                        linkCodigo={projeto.linkCodigo}
+                        linkDeploy={projeto.linkDeploy}
+                        linkVideo={projeto.linkVideo}
+                        tecnologias={projeto.tecnologias}
+                    />
+                ))}
             </div>
 
         </section>
