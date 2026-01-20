@@ -1,5 +1,4 @@
 import Cabecalho from "./components/Cabecalho"
-import Contato from "./components/Contato"
 import Experiencia from "./components/Experiencia"
 import Habilidades from "./components/Habilidades"
 import Inicio from "./components/Inicio"
@@ -13,7 +12,6 @@ function App() {
       <Sobre />
       <Experiencia />
       <Habilidades />
-      <Contato />
     </>
   )
 }
