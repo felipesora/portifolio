@@ -66,14 +66,24 @@ const Inicio = () => {
                 </div>
 
                 <div className="flex gap-5">
-                    <button className="text-white font-bold bg-[#313131] flex items-center justify-center gap-2 rounded-[10px] py-3 w-48 cursor-pointer hover:bg-[#252525] transition-colors duration-300">
+                    <button className="text-white font-bold bg-[#313131] flex items-center justify-center gap-2 rounded-[10px] py-3 w-48 cursor-pointer hover:bg-[#252525] hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">
                         <img src={IconeEmail} alt="ícone de email" />
                         FALE COMIGO
                     </button>
 
-                    <button className="group text-white font-bold bg-transparent border border-white flex items-center justify-center gap-2 rounded-[10px] w-48 py-3 cursor-pointer hover:bg-white hover:text-black transition-colors duration-300">
-                        <img src={IconeDownloadBranco} alt="ícone de download" className="block group-hover:hidden" />
-                        <img src={IconeDownloadPreto} alt="ícone de download" className="hidden group-hover:block" />
+                    <button className="group text-white font-bold bg-transparent border border-white flex items-center justify-center gap-2 rounded-[10px] w-48 py-3 cursor-pointer hover:bg-white hover:text-black hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">
+                        <div className="relative w-7.5 h-7.5">
+                            <img
+                                src={IconeDownloadBranco}
+                                alt="ícone de download"
+                                className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                            />
+                            <img
+                                src={IconeDownloadPreto}
+                                alt="ícone de download"
+                                className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                            />
+                        </div>
                         BAIXAR CV
                     </button>
                 </div>
