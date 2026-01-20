@@ -1,13 +1,14 @@
 import type { Projeto } from "./types";
 import LifeBoard from "./images/lifeboard.png";
 import NextStep from "./images/nextstep.png";
+import MotoTrack from "./images/mototrack.png";
 
 export const projetos: Projeto[] = [
     {
         id: 1,
         imagem: LifeBoard,
         titulo: "LifeBoard",
-        descricao: "O LifeBoard é uma plataforma integrada de gestão financeira e produtividade pessoal, desenvolvida para ajudar usuários a organizarem suas finanças e tarefas em um ambiente único, moderno e intuitivo. A solução combina recursos de controle financeiro, acompanhamento de metas e gerenciamento de tarefas, oferecendo uma visão completa do dia a dia para facilitar decisões e melhorar a organização pessoal.",
+        descricao: "LifeBoard é uma plataforma integrada de gestão financeira e produtividade pessoal, que centraliza controle de finanças, metas e tarefas em um ambiente moderno e intuitivo, facilitando a organização do dia a dia e a tomada de decisões.",
         linkCodigo: "https://github.com/felipesora/LifeBoard",
         linkDeploy: "https://lifeboard-frontend.vercel.app/",
         linkVideo: "https://www.youtube.com/watch?v=hLPd2yK9jnE",
@@ -19,22 +20,10 @@ export const projetos: Projeto[] = [
                 titulo: "Spring Boot"
             },
             {
-                titulo: "Spring Security"
-            },
-            {
                 titulo: "JWT"
             },
             {
                 titulo: "JPA"
-            },
-            {
-                titulo: "OpenAPI"
-            },
-            {
-                titulo: "JUnit"
-            },
-            {
-                titulo: "Mockito"
             },
             {
                 titulo: "React.js"
@@ -45,9 +34,6 @@ export const projetos: Projeto[] = [
             {
                 titulo: "Styled-Components"
             },
-            {
-                titulo: "React Router DOM"
-            }
         ]
     },
     {
@@ -66,31 +52,16 @@ export const projetos: Projeto[] = [
                 titulo: "Spring Boot"
             },
             {
-                titulo: "Spring Security"
-            },
-            {
                 titulo: "JWT"
             },
             {
                 titulo: "JPA"
             },
             {
-                titulo: "OpenAPI"
-            },
-            {
-                titulo: "JUnit"
-            },
-            {
-                titulo: "Mockito"
-            },
-            {
                 titulo: "React.js"
             },
             {
                 titulo: "JavaScript"
-            },
-            {
-                titulo: "Styled-Components"
             },
             {
                 titulo: ".NET"
@@ -100,6 +71,47 @@ export const projetos: Projeto[] = [
             },
             {
                 titulo: "React Native"
+            },
+        ]
+    },
+    {
+        id: 3,
+        imagem: MotoTrack,
+        titulo: "MotoTrack",
+        descricao: "MotoTrack é um sistema de gestão de frotas desenvolvido para empresas de aluguel de motos, como a Mottu, oferecendo controle completo sobre pátios, manutenções e disponibilidade dos veículos. A plataforma centraliza o histórico de movimentações, serviços e estoque de peças, garantindo mais organização, rastreabilidade e eficiência operacional.",
+        linkCodigo: "https://github.com/mototrack-challenge/mototrack-backend-mvc-java",
+        linkDeploy: "https://mototrack-mvc-java.onrender.com/",
+        linkVideo: "https://www.youtube.com/watch?v=veq9pSnL0cI",
+        tecnologias: [
+            {
+                titulo: "Java"
+            },
+            {
+                titulo: "Spring Boot"
+            },
+            {
+                titulo: "JWT"
+            },
+            {
+                titulo: "JPA"
+            },
+            {
+                titulo: "React.js"
+            },
+            {
+                titulo: "JavaScript"
+            },
+            {
+                titulo: ".NET"
+            },
+            {
+                titulo: "ASP.NET"
+            },
+            {
+                titulo: "React Native"
+            },
+            {
+                titulo: "Azure for Deploy"
             },
         ]
     },
