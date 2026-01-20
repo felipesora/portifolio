@@ -1,5 +1,5 @@
 import HeroBg from "../../assets/images/fundo-hero-section.png";
-import IconeEmail from "../../assets/icons/icone-email.png";
+import IconeEmail from "../../assets/icons/icone-email-branco.png";
 import IconeDownloadBranco from "../../assets/icons/icone-download-branco.png";
 import IconeDownloadPreto from "../../assets/icons/icone-download-preto.png";
 import IconeScroll from "../../assets/icons/icone-scroll.png";
@@ -59,7 +59,7 @@ const Inicio = () => {
                 <div className="flex flex-col items-center gap-3">
                     <h2 className="text-white font-bold text-lg">OLÁ, SEJA BEM VINDO!</h2>
                     <h1 className="text-white font-bold text-6xl">Eu sou Felipe Sora</h1>
-                    <h2 className="text-white font-bold text-2xl min-h-[32px]">
+                    <h2 className="text-white font-bold text-2xl min-h-8">
                         {displayText}
                         <span className="animate-pulse">|</span>
                     </h2>
