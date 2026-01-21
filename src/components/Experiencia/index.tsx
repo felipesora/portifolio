@@ -1,10 +1,11 @@
+import AnimatedItem from "../AnimatedItem";
 import CardCarreira from "./CardCarreira";
 import { itensCarreira } from "./data";
 import IconeCarreira from "./IconeCarreira";
 
 const Experiencia = () => {
     return (
-        <section className="bg-[#EBEBEB] pt-24 pb-32 px-40 flex flex-col gap-14">
+        <section id="experiencia" className="bg-[#EBEBEB] pt-24 pb-32 px-40 flex flex-col gap-14">
 
             <div className="flex flex-col gap-4">
                 <h2 className="text-4xl font-bold">Experiência & Educação</h2>
@@ -17,20 +18,22 @@ const Experiencia = () => {
                 {itensCarreira
                     .filter((item) => item.tipo === "experiencia")
                     .map((item) => (
-                        <div key={item.id} className="flex items-start gap-6">
+                        <AnimatedItem key={item.id}>
+                            <div className="flex items-start gap-6">
 
-                            <div className="shrink-0">
-                                <IconeCarreira tipo={item.tipo} />
+                                <div className="shrink-0">
+                                    <IconeCarreira tipo={item.tipo} />
+                                </div>
+
+                                <CardCarreira 
+                                    tipo={item.tipo}
+                                    data={item.data}
+                                    titulo={item.titulo} 
+                                    instituicao={item.instituicao}
+                                    descricao={item.descricao}
+                                />
                             </div>
-
-                            <CardCarreira 
-                                tipo={item.tipo}
-                                data={item.data}
-                                titulo={item.titulo} 
-                                instituicao={item.instituicao}
-                                descricao={item.descricao}
-                            />
-                        </div>
+                        </AnimatedItem>
                 ))}
             </div>
 
@@ -40,20 +43,22 @@ const Experiencia = () => {
                 {itensCarreira
                     .filter((item) => item.tipo === "educacao")
                     .map((item) => (
-                        <div key={item.id} className="flex items-start gap-6">
+                        <AnimatedItem key={item.id}>
+                            <div className="flex items-start gap-6">
 
-                            <div className="shrink-0">
-                                <IconeCarreira tipo={item.tipo} />
+                                <div className="shrink-0">
+                                    <IconeCarreira tipo={item.tipo} />
+                                </div>
+
+                                <CardCarreira 
+                                    tipo={item.tipo}
+                                    data={item.data}
+                                    titulo={item.titulo} 
+                                    instituicao={item.instituicao}
+                                    descricao={item.descricao}
+                                />
                             </div>
-
-                            <CardCarreira 
-                                tipo={item.tipo}
-                                data={item.data}
-                                titulo={item.titulo} 
-                                instituicao={item.instituicao}
-                                descricao={item.descricao}
-                            />
-                        </div>
+                        </AnimatedItem>
                 ))}
             </div>
         </section>

@@ -8,7 +8,7 @@ import type { CardProjetoProps } from "./types";
 const CardProjeto = ({ imagem, titulo, descricao, linkCodigo, linkDeploy, linkVideo, tecnologias }: CardProjetoProps) => {
     return (
         <div className="bg-white flex flex-col rounded-[10px] min-w-[420px] w-[470px] shadow-sm border border-transparent hover:border-[#111111] hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out">
-            <img src={imagem} alt="" className="w-full h-auto rounded-t-[10px]" />
+            <img src={imagem} alt="imagem do projeto" className="w-full h-[230px] rounded-t-[10px]" />
 
             <div className="px-5 pt-5 pb-3 flex flex-col flex-1 justify-between">
                 
@@ -31,7 +31,7 @@ const CardProjeto = ({ imagem, titulo, descricao, linkCodigo, linkDeploy, linkVi
                         </a>
 
                         <a href={linkDeploy} target="_blank" className="group flex items-center gap-2 text-[#313131] font-bold bg-transparent border border-[#313131] justify-center rounded-[10px] w-full py-3 cursor-pointer hover:bg-[#313131] hover:text-white transition-colors duration-300 ease-in-out">
-                            <div className="relative w-5 h-5">
+                            <div className="relative w-7.5 h-7.5">
                                 <img
                                     src={IconeDeployPreto}
                                     alt="ícone de link"

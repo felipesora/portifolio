@@ -8,7 +8,7 @@ import IconeLinkedinPreto from "../../assets/icons/icone-linkedin-preto.png";
 
 const Contato = () => {
     return (
-        <section className="bg-(--color-primary) pt-24 pb-16 px-40 flex flex-col gap-14">
+        <section id="contato" className="bg-(--color-primary) pt-24 pb-16 px-40 flex flex-col gap-14">
         
             <div className="flex flex-col gap-4">
                 <h2 className="text-4xl font-bold text-white">Entre em Contato</h2>
