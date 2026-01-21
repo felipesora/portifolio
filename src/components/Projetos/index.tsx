@@ -13,7 +13,7 @@ const Projetos = () => {
                 <p className="text-base text-[#6C757D]">Alguns dos projetos que desenvolvi para praticar e demonstrar minhas habilidades</p>
             </div>
 
-            <div className={`grid grid-cols-[auto_auto_auto] justify-between gap-y-10 transition-all duration-700 ease-in-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} ref={ref}>
+            <div className={`grid grid-cols-[auto_auto_auto] justify-between gap-x-10 gap-y-10 transition-all duration-700 ease-in-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"} [@media(max-width:1760px)]:grid-cols-[auto_auto]`} ref={ref}>
                 {projetos.map((projeto) => (
                     <CardProjeto
                         key={projeto.id}
