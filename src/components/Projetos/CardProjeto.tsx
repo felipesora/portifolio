@@ -47,7 +47,7 @@ const CardProjeto = ({ imagem, titulo, descricao, linkCodigo, linkDeploy, linkVi
                         </a>
                     </div>
 
-                    <a href={linkVideo} target="_blank" className="flex items-center gap-2 text-white font-bold bg-[#FF0000] justify-center rounded-[10px] w-full py-3 cursor-pointer hover:bg-[#CC0000] transition-colors duration-300">
+                    <a href={linkVideo} target="_blank" className="flex items-center gap-2 text-white font-bold bg-[#FF0000] justify-center rounded-[10px] w-full py-3 cursor-pointer hover:bg-[#ad0606] transition-colors duration-300">
                         <img src={IconeYoutube} alt="ícone do youtube" />
                         Vídeo
                     </a>
