@@ -4,6 +4,7 @@ import IconeDownloadBranco from "../../assets/icons/icone-download-branco.png";
 import IconeDownloadPreto from "../../assets/icons/icone-download-preto.png";
 import IconeScroll from "../../assets/icons/icone-scroll.png";
 import { useEffect, useState } from "react";
+import { scrollToSection } from "../../utils/scrollToSection";
 
 const Inicio = () => {
     const texts = [
@@ -66,7 +67,7 @@ const Inicio = () => {
                 </div>
 
                 <div className="flex gap-5">
-                    <button className="text-white font-bold bg-[#313131] flex items-center justify-center gap-2 rounded-[10px] py-3 w-48 cursor-pointer hover:bg-[#252525] hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">
+                    <button onClick={() => scrollToSection("contato")} className="text-white font-bold bg-[#313131] flex items-center justify-center gap-2 rounded-[10px] py-3 w-48 cursor-pointer hover:bg-[#252525] hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">
                         <img src={IconeEmail} alt="ícone de email" />
                         FALE COMIGO
                     </button>
@@ -90,7 +91,7 @@ const Inicio = () => {
             </div>
 
             <div className="relative z-10 flex justify-center pb-7">
-                <button className="cursor-pointer">
+                <button onClick={() => scrollToSection("sobre")} className="cursor-pointer">
                     <img src={IconeScroll} alt="ícone de seta para baixo" className="animate-bounce-down" />
                 </button>
             </div>

@@ -2,7 +2,7 @@ import FotoFelipe from "../../assets/images/foto-felipe.png";
 
 const Sobre = () => {
     return (
-        <section className="bg-white pt-24 pb-32 px-40 flex flex-col gap-14">
+        <section id="sobre" className="bg-white pt-24 pb-32 px-40 flex flex-col gap-14">
 
             <div className="flex flex-col gap-4">
                 <h2 className="text-4xl font-bold">Sobre Mim</h2>
