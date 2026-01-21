@@ -1,7 +1,10 @@
+import { useInView } from "../../hooks/useInView";
 import CardProjeto from "./CardProjeto";
 import { projetos } from "./dataProjetos";
 
 const Projetos = () => {
+    const { ref, visible } = useInView<HTMLDivElement>();
+
     return(
         <section id="projetos" className="bg-[#EBEBEB] pt-24 pb-32 px-40 flex flex-col gap-14">
         
@@ -10,7 +13,7 @@ const Projetos = () => {
                 <p className="text-base text-[#6C757D]">Alguns dos projetos que desenvolvi para praticar e demonstrar minhas habilidades</p>
             </div>
 
-            <div className="flex flex-wrap justify-between gap-y-10">
+            <div className={`flex flex-wrap justify-between gap-y-10 transition-all duration-700 ease-in-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} ref={ref}>
                 {projetos.map((projeto) => (
                     <CardProjeto
                         key={projeto.id}

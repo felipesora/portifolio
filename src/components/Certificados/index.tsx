@@ -1,7 +1,10 @@
+import { useInView } from "../../hooks/useInView";
 import CardCertificado from "./CardCertificado";
 import { certificados } from "./dataCertificados";
 
 const Certificados = () => {
+    const { ref, visible } = useInView<HTMLDivElement>();
+
     return (
         <section id="certificados" className="bg-white pt-24 pb-32 px-40 flex flex-col gap-14">
         
@@ -10,7 +13,7 @@ const Certificados = () => {
                 <p className="text-base text-[#6C757D]">Certificações que adquiri ao longo da minha jornada de aprendizado</p>
             </div>
             
-            <div className="flex flex-wrap justify-between gap-y-10">
+            <div className={`flex flex-wrap justify-between gap-y-10 transition-all duration-700 ease-in-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} ref={ref}>
                 {certificados.map((certificado) => (
                     <CardCertificado 
                         key={certificado.id} 
