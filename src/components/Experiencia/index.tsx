@@ -19,7 +19,7 @@ const Experiencia = () => {
                     .filter((item) => item.tipo === "experiencia")
                     .map((item) => (
                         <AnimatedItem key={item.id}>
-                            <div className="flex items-start gap-6">
+                            <div className="flex items-start gap-6 [@media(max-width:890px)]:gap-2">
 
                                 <div className="shrink-0">
                                     <IconeCarreira tipo={item.tipo} />
@@ -44,7 +44,7 @@ const Experiencia = () => {
                     .filter((item) => item.tipo === "educacao")
                     .map((item) => (
                         <AnimatedItem key={item.id}>
-                            <div className="flex items-start gap-6">
+                            <div className="flex items-start gap-6 [@media(max-width:890px)]:gap-2">
 
                                 <div className="shrink-0">
                                     <IconeCarreira tipo={item.tipo} />

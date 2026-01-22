@@ -8,7 +8,7 @@ const Rodape = () => {
                 <img src={Logo} alt="logo" />
             </button>
 
-            <nav>
+            <nav className="block [@media(max-width:780px)]:hidden">
                 <ul className="flex gap-8">
                     <li>
                         <button onClick={() => scrollToSection("inicio")} className="nav-link-footer">Início</button>
