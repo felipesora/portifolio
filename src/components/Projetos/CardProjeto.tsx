@@ -7,7 +7,7 @@ import type { CardProjetoProps } from "./types";
 
 const CardProjeto = ({ imagem, titulo, descricao, linkCodigo, linkDeploy, linkVideo, tecnologias }: CardProjetoProps) => {
     return (
-        <div className="bg-white flex flex-col rounded-[10px] min-w-[420px] w-[470px] shadow-sm border border-transparent hover:border-[#111111] hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out [@media(max-width:1760px)]:w-[100%]">
+        <div className="bg-white flex flex-col rounded-[10px] min-w-[420px] w-[470px] shadow-sm border border-transparent hover:border-[#111111] hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out [@media(max-width:1760px)]:w-[100%] [@media(max-width:1760px)]:min-w-0">
 
             <img src={imagem} alt="imagem do projeto" className="w-full h-[230px] rounded-t-[10px] [@media(max-width:1760px)]:object-cover" />
 

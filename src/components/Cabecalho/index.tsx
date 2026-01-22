@@ -24,7 +24,7 @@ const Cabecalho = () => {
 
     return (
         <header id="inicio" className="bg-(--color-primary) py-9 px-8 flex justify-between items-center border-b border-b-[#292929]">
-            <button onClick={() => scrollToSection("inicio")} className="cursor-pointer">
+            <button onClick={() => scrollToSection("inicio")} className="cursor-pointer [@media(max-width:1024px)]:w-28 [@media(max-width:670px)]:w-24">
                 <img src={Logo} alt="Logo" />
             </button>
         

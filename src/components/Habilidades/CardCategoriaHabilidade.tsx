@@ -22,7 +22,7 @@ const CardCategoriaHabilidade = ({ categoria }: CardCategoriaHabilidadeProps) =>
     const Titulo = tituloPorCategoria[categoria];
     
     return (
-        <div className="bg-[#EBEBEB] border border-transparent px-7 py-6 rounded-[10px] shadow-sm flex flex-col gap-3.5 min-w-[320px] w-[30%] hover:border-[#111111] hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out [@media(max-width:1620px)]:w-full">
+        <div className="bg-[#EBEBEB] border border-transparent px-7 py-6 rounded-[10px] shadow-sm flex flex-col gap-3.5 min-w-[320px] w-[30%] hover:border-[#111111] hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out [@media(max-width:1620px)]:w-full [@media(max-width:1620px)]:min-w-0">
             
             <div className="flex gap-2 items-center">
                 <img src={Icone} alt={`ícone de ${Titulo}`} />

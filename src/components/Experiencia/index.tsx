@@ -5,7 +5,7 @@ import IconeCarreira from "./IconeCarreira";
 
 const Experiencia = () => {
     return (
-        <section id="experiencia" className="bg-[#EBEBEB] pt-24 pb-32 px-40 flex flex-col gap-14">
+        <section id="experiencia" className="bg-[#EBEBEB] pt-24 pb-32 px-40 flex flex-col gap-14 [@media(max-width:1180px)]:px-20 [@media(max-width:690px)]:px-10">
 
             <div className="flex flex-col gap-4">
                 <h2 className="text-4xl font-bold">Experiência & Educação</h2>
