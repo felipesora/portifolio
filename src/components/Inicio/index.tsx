@@ -55,7 +55,7 @@ const Inicio = () => {
             
             <div className="absolute inset-0 bg-[#111111]/90"></div>
 
-            <div className="relative z-10 flex flex-col items-center gap-8 pt-44 pb-64">
+            <div className="relative z-10 flex flex-col items-center gap-8 pt-44 pb-64 [@media(max-width:1180px)]:pb-56">
 
                 <div className="flex flex-col items-center gap-3">
                     <h2 className="text-white font-bold text-lg">OLÁ, SEJA BEM VINDO!</h2>

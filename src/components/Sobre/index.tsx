@@ -12,8 +12,8 @@ const Sobre = () => {
                 <p className="text-base text-[#6C757D]">Conheça um pouco sobre minha trajetória, paixões e objetivos profissionais </p>
             </div>
 
-            <div ref={ref} className={`flex gap-14 transition-all duration-700 ease-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-                <img src={FotoFelipe} alt="foto de Felipe" className="border border-[#6C757D] rounded-[5px] shadow-sm" />
+            <div ref={ref} className={`flex gap-14 transition-all duration-700 ease-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"} [@media(max-width:1180px)]:flex-col [@media(max-width:1180px)]:items-center [@media(max-width:1180px)]:text-center`}>
+                <img src={FotoFelipe} alt="foto de Felipe" className="border border-[#6C757D] rounded-[5px] shadow-sm max-w-[350px] w-full h-auto object-cover [@media(max-width:1180px)]:max-w-[250px]" />
 
                 <div className="flex flex-col gap-5">
                     <h3 className="text-2xl font-bold">Engenheiro de Software & Desenvolvedor</h3>

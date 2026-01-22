@@ -13,7 +13,7 @@ const Certificados = () => {
                 <p className="text-base text-[#6C757D]">Certificações que adquiri ao longo da minha jornada de aprendizado</p>
             </div>
             
-            <div className={`grid grid-cols-[auto_auto_auto] justify-between gap-y-10 transition-all duration-700 ease-in-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} ref={ref}>
+            <div className={`grid grid-cols-[auto_auto_auto] justify-between gap-y-10 transition-all duration-700 ease-in-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"} [@media(max-width:1540px)]:grid-cols-2 [@media(max-width:1540px)]:gap-x-20 [@media(max-width:1180px)]:grid-cols-1!`} ref={ref}>
                 {certificados.map((certificado) => (
                     <CardCertificado 
                         key={certificado.id} 
