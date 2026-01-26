@@ -26,7 +26,7 @@ const CardCategoriaHabilidade = ({ categoria }: CardCategoriaHabilidadeProps) =>
             
             <div className="flex gap-2 items-center">
                 <img src={Icone} alt={`ícone de ${Titulo}`} />
-                <h4 className="font-bold text-lg">{Titulo}</h4>
+                <h4 className="font-bold text-lg [@media(max-width:550px)]:text-base">{Titulo}</h4>
             </div>
 
             <div className="bg-[#DEE2E6] h-0.5 w-full"></div>

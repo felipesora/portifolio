@@ -5,15 +5,15 @@ import IconeCarreira from "./IconeCarreira";
 
 const Experiencia = () => {
     return (
-        <section id="experiencia" className="bg-[#EBEBEB] pt-24 pb-32 px-40 flex flex-col gap-14 [@media(max-width:1180px)]:px-20 [@media(max-width:690px)]:px-10">
+        <section id="experiencia" className="bg-[#EBEBEB] pt-24 pb-32 px-40 flex flex-col gap-14 [@media(max-width:1180px)]:px-20 [@media(max-width:690px)]:px-10 [@media(max-width:550px)]:px-5! [@media(max-width:550px)]:pt-16 [@media(max-width:550px)]:pb-20">
 
             <div className="flex flex-col gap-4">
-                <h2 className="text-4xl font-bold">Experiência & Educação</h2>
-                <p className="text-base text-[#6C757D]">Minha jornada profissional e acadêmica até o momento</p>
+                <h2 className="text-4xl font-bold [@media(max-width:550px)]:text-2xl">Experiência & Educação</h2>
+                <p className="text-base text-[#6C757D] [@media(max-width:550px)]:text-sm">Minha jornada profissional e acadêmica até o momento</p>
             </div>
 
             <div className="flex flex-col gap-8">
-                <h3 className="text-2xl font-bold">Experiência</h3>
+                <h3 className="text-2xl font-bold [@media(max-width:550px)]:text-xl">Experiência</h3>
 
                 {itensCarreira
                     .filter((item) => item.tipo === "experiencia")
@@ -38,7 +38,7 @@ const Experiencia = () => {
             </div>
 
             <div className="flex flex-col gap-8">
-                <h3 className="text-2xl font-bold">Educação</h3>
+                <h3 className="text-2xl font-bold [@media(max-width:550px)]:text-xl">Educação</h3>
 
                 {itensCarreira
                     .filter((item) => item.tipo === "educacao")
