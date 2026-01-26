@@ -1,10 +1,13 @@
 export function scrollToSection(id: string) {
     const element = document.getElementById(id);
+    if (!element) return;
 
-    if (element) {
-        element.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        })
-    }
+    const headerOffset = 120; // altura aproximada do header
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+    });
 }

@@ -20,8 +20,8 @@ const CardContato = ({ icone, iconeHover, nome, descricao, link }: CardContatoPr
             </a>
 
             <div>
-                <h4 className="font-bold text-white text-lg">{nome}</h4>
-                <p className="text-white">{descricao}</p>
+                <h4 className="font-bold text-white text-lg [@media(max-width:550px)]:text-base">{nome}</h4>
+                <p className="text-white [@media(max-width:550px)]:text-sm">{descricao}</p>
             </div>
         </div>
     )

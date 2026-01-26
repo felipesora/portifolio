@@ -5,10 +5,10 @@ const Rodape = () => {
     return (
         <footer className="bg-(--color-primary) py-12 border-t border-t-[#292929] flex flex-col items-center gap-14">
             <button onClick={() => scrollToSection("inicio")} className="cursor-pointer">
-                <img src={Logo} alt="logo" />
+                <img src={Logo} alt="logo" className="[@media(max-width:1024px)]:w-28 [@media(max-width:670px)]:w-24" />
             </button>
 
-            <nav>
+            <nav className="block [@media(max-width:780px)]:hidden">
                 <ul className="flex gap-8">
                     <li>
                         <button onClick={() => scrollToSection("inicio")} className="nav-link-footer">Início</button>
@@ -34,7 +34,7 @@ const Rodape = () => {
                 </ul>
             </nav>
 
-            <p className="text-white text-sm">© 2026 Felipe Sora. Todos os direitos reservados.</p>
+            <p className="text-white text-sm [@media(max-width:670px)]:text-xs">© 2026 Felipe Sora. Todos os direitos reservados.</p>
         </footer>
     )
 }
