@@ -66,7 +66,7 @@ const Inicio = () => {
     }, [charIndex, isDeleting, textIndex]);
     
     return (
-        <section style={{ backgroundImage: `url(${HeroBg})` }} className="relative bg-cover bg-center bg-fixed">
+        <section id="inicio" style={{ backgroundImage: `url(${HeroBg})` }} className="relative bg-cover bg-center bg-fixed pt-32 [@media(max-width:1240px)]:pt-24 [@media(max-width:490px)]:pt-14">
             
             <div className="absolute inset-0 bg-[#111111]/90"></div>
 

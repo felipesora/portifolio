@@ -23,8 +23,8 @@ const Cabecalho = () => {
     ];
 
     return (
-        <header id="inicio" className="bg-(--color-primary) py-9 px-8 flex justify-between items-center border-b border-b-[#292929]">
-            <button onClick={() => scrollToSection("inicio")} className="cursor-pointer [@media(max-width:1024px)]:w-28 [@media(max-width:670px)]:w-24">
+        <header className="fixed top-0 left-0 w-full z-50 bg-(--color-primary) py-9 px-8 flex justify-between items-center border-b border-b-[#292929] [@media(max-width:1240px)]:px-4 [@media(max-width:1240px)]:py-7 [@media(max-width:490px)]:py-5">
+            <button onClick={() => scrollToSection("inicio")} className="cursor-pointer [@media(max-width:1024px)]:w-28 [@media(max-width:670px)]:w-24 [@media(max-width:570px)]:w-20!">
                 <img src={Logo} alt="Logo" />
             </button>
         
@@ -40,8 +40,8 @@ const Cabecalho = () => {
             </nav>
 
             {/* Botão Menu Mobile */}
-            <button className="lg:hidden border border-white/20 p-1.5 rounded-[5px] cursor-pointer transition-all duration-200 hover:bg-white/10 active:scale-95" onClick={() => setMenuAberto(true)} aria-label="Abrir menu">
-                <img src={MenuAbrir} alt="ícone de menu" className="w-7" />
+            <button className="lg:hidden border border-white/20 p-1.5 rounded-[5px] cursor-pointer transition-all duration-200 hover:bg-white/10 active:scale-95 [@media(max-width:570px)]:p-1" onClick={() => setMenuAberto(true)} aria-label="Abrir menu">
+                <img src={MenuAbrir} alt="ícone de menu" className="w-7 [@media(max-width:570px)]:w-6" />
             </button>
 
             {/* Overlay */}
