@@ -11,7 +11,7 @@ const CardCertificado = ({ nome, instituicao, link }: CardCertificadoProps) => {
                 <p className="text-[#6C757D] [@media(max-width:550px)]:text-sm">{instituicao}</p>
             </div>
 
-            <a href={link} className="text-center font-bold text-[#313131] border border-[#313131] py-3 px-8 rounded-[10px] transition-colors duration-300 ease-in-out hover:bg-[#313131] hover:text-white [@media(max-width:550px)]:text-sm">Ver Certificado</a>
+            <a href={link} target="_blank" rel="noopener noreferrer" className="text-center font-bold text-[#313131] border border-[#313131] py-3 px-8 rounded-[10px] transition-colors duration-300 ease-in-out hover:bg-[#313131] hover:text-white [@media(max-width:550px)]:text-sm" aria-label={`Ver certificado ${nome} - ${instituicao}`}>Ver Certificado</a>
         </div>
     )
 }

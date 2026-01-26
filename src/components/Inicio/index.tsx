@@ -87,7 +87,7 @@ const Inicio = () => {
                         FALE COMIGO
                     </button>
 
-                    <button className="group text-white font-bold bg-transparent border border-white flex items-center justify-center gap-2 rounded-[10px] w-48 py-3 cursor-pointer hover:bg-white hover:text-black hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 [@media(max-width:750px)]:w-64 [@media(max-width:550px)]:text-[14px] [@media(max-width:550px)]:w-56!">
+                    <a href="https://drive.google.com/file/d/1mgZTIBiG-lkYeloqTmvATScAkryDkBho/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="group text-white font-bold bg-transparent border border-white flex items-center justify-center gap-2 rounded-[10px] w-48 py-3 cursor-pointer hover:bg-white hover:text-black hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 [@media(max-width:750px)]:w-64 [@media(max-width:550px)]:text-[14px] [@media(max-width:550px)]:w-56!">
                         <div className="relative w-7.5 h-7.5">
                             <img
                                 src={IconeDownloadBranco}
@@ -101,7 +101,7 @@ const Inicio = () => {
                             />
                         </div>
                         BAIXAR CV
-                    </button>
+                    </a>
                 </div>
             </div>
 
