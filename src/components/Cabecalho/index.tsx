@@ -23,7 +23,7 @@ const Cabecalho = () => {
     ];
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 bg-(--color-primary) py-9 px-8 flex justify-between items-center border-b border-b-[#292929] [@media(max-width:1240px)]:px-4 [@media(max-width:1240px)]:py-7 [@media(max-width:490px)]:py-5">
+        <header className="fixed top-0 left-0 w-full z-50 bg-(--color-primary) py-9 px-8 flex justify-between items-center border-b border-b-[#292929] [@media(max-width:1240px)]:px-4 [@media(max-width:1530px)]:py-7 [@media(max-width:490px)]:py-5">
             <button onClick={() => scrollToSection("inicio")} className="cursor-pointer [@media(max-width:1024px)]:w-28 [@media(max-width:670px)]:w-24 [@media(max-width:570px)]:w-20!">
                 <img src={Logo} alt="Logo" />
             </button>

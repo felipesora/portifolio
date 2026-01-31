@@ -26,12 +26,12 @@ const CardProjeto = ({ imagem, titulo, descricao, linkCodigo, linkDeploy, linkVi
 
                 <div className="flex flex-col gap-3 mt-5">
                     <div className="flex gap-5">
-                        <a href={linkCodigo} target="_blank" className="flex items-center gap-2 text-white font-bold bg-[#313131] justify-center rounded-[10px] w-full py-3 cursor-pointer hover:bg-[#252525] transition-colors duration-300 [@media(max-width:550px)]:text-[14px] [@media(max-width:550px)]:py-2">
+                        <a href={linkCodigo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white font-bold bg-[#313131] justify-center rounded-[10px] w-full py-3 cursor-pointer hover:bg-[#252525] transition-colors duration-300 [@media(max-width:550px)]:text-[14px] [@media(max-width:550px)]:py-2">
                             <img src={IconeGithub} alt="ícone github" className="[@media(max-width:550px)]:w-7"/>
                             Código
                         </a>
 
-                        <a href={linkDeploy} target="_blank" className="group flex items-center gap-2 text-[#313131] font-bold bg-transparent border border-[#313131] justify-center rounded-[10px] w-full py-3 cursor-pointer hover:bg-[#313131] hover:text-white transition-colors duration-300 ease-in-out [@media(max-width:550px)]:text-[14px]">
+                        <a href={linkDeploy} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 text-[#313131] font-bold bg-transparent border border-[#313131] justify-center rounded-[10px] w-full py-3 cursor-pointer hover:bg-[#313131] hover:text-white transition-colors duration-300 ease-in-out [@media(max-width:550px)]:text-[14px]">
                             <div className="relative w-7.5 h-7.5">
                                 <img
                                     src={IconeDeployPreto}
@@ -48,7 +48,7 @@ const CardProjeto = ({ imagem, titulo, descricao, linkCodigo, linkDeploy, linkVi
                         </a>
                     </div>
 
-                    <a href={linkVideo} target="_blank" className="flex items-center gap-2 text-white font-bold bg-[#FF0000] justify-center rounded-[10px] w-full py-3 cursor-pointer hover:bg-[#ad0606] transition-colors duration-300 [@media(max-width:550px)]:text-[14px]">
+                    <a href={linkVideo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white font-bold bg-[#FF0000] justify-center rounded-[10px] w-full py-3 cursor-pointer hover:bg-[#ad0606] transition-colors duration-300 [@media(max-width:550px)]:text-[14px]">
                         <img src={IconeYoutube} alt="ícone do youtube" className="[@media(max-width:550px)]:w-7"/>
                         Vídeo
                     </a>
