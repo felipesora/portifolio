@@ -23,7 +23,7 @@ export const certificados: Certificado[] = [
         id: 4,
         nome: "4º Semestre - ADS",
         instituicao: "FIAP",
-        link: "https://drive.google.com/file/d/1YSAQl2JiJjQNp455U6kltKMww8_t8STT/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1_odBgup4as4Sum1znbA7-ZmaUM3WLFZj/view?usp=sharing"
     },
     {
         id: 5,
