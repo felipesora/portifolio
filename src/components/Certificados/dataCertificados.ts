@@ -31,4 +31,10 @@ export const certificados: Certificado[] = [
         instituicao: "Alura",
         link: "https://drive.google.com/file/d/1g07iBikzvRL63sFSDmG7ngSgxpQZ45i6/view?usp=sharing"
     },
+    {
+        id: 6,
+        nome: "Começando na AWS",
+        instituicao: "Alura",
+        link: "https://drive.google.com/file/d/1IMQ101zCQv6NHWh-dsbR2CYcEyII_InV/view?usp=sharing"
+    },
 ];

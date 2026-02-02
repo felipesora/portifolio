@@ -3,7 +3,7 @@ import IconeCertificado from "../../assets/icons/icone-certificado.png"
 
 const CardCertificado = ({ nome, instituicao, link }: CardCertificadoProps) => {
     return (
-        <div className="bg-[#EBEBEB] shadow-sm rounded-[10px] py-16 px-24 flex flex-col gap-5 items-center border border-transparent hover:border-[#111111] hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out [@media(max-width:1540px)]:w-[100%] [@media(max-width:1180px)]:py-12 [@media(max-width:410px)]:px-16">
+        <div className="bg-[#EBEBEB] shadow-sm rounded-[10px] py-16 px-24 flex flex-col gap-5 items-center border border-transparent hover:border-[#111111] hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out [@media(max-width:1540px)]:w-[100%] [@media(max-width:1180px)]:py-12 [@media(max-width:1230px)]:px-16">
             <img src={IconeCertificado} alt="icone certificado" />
 
             <div className="flex flex-col gap-1 items-center">
