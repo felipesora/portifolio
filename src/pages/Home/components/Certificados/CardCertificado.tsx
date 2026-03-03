@@ -1,5 +1,5 @@
 import type { CardCertificadoProps } from "./types";
-import IconeCertificado from "../../assets/icons/icone-certificado.png"
+import IconeCertificado from "../../../../assets/icons/icone-certificado.png";
 
 const CardCertificado = ({ nome, instituicao, link }: CardCertificadoProps) => {
     return (

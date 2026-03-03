@@ -1,4 +1,4 @@
-import { useInView } from "../../hooks/useInView";
+import { useInView } from "../../../../hooks/useInView";
 import CardProjeto from "./CardProjeto";
 import { projetos } from "./dataProjetos";
 
@@ -17,13 +17,10 @@ const Projetos = () => {
                 {projetos.map((projeto) => (
                     <CardProjeto
                         key={projeto.id}
+                        id={projeto.id}
                         imagem={projeto.imagem}
                         titulo={projeto.titulo}
                         descricao={projeto.descricao}
-                        linkCodigo={projeto.linkCodigo}
-                        linkDeploy={projeto.linkDeploy}
-                        linkVideo={projeto.linkVideo}
-                        tecnologias={projeto.tecnologias}
                     />
                 ))}
             </div>

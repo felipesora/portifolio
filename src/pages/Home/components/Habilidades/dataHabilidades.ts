@@ -1,20 +1,20 @@
 import type { Habilidade } from "./types";
-import IconeReact from "../../assets/icons/icone-react.png";
-import IconeTypeScript from "../../assets/icons/icone-typescript.png";
-import IconeJavaScript from "../../assets/icons/icone-javascript.png";
-import IconeHTML from "../../assets/icons/icone-html.png";
-import IconeCSS from "../../assets/icons/icone-css.png";
-import IconeStyled from "../../assets/icons/icone-styled.png";
-import IconeJava from "../../assets/icons/icone-java.png";
-import IconeSpring from "../../assets/icons/icone-spring-boot.png";
-import IconeDataBase from "../../assets/icons/icone-database.png";
-import IconeSecurity from "../../assets/icons/icone-security.png";
-import IconeTeste from "../../assets/icons/icone-teste.png";
-import IconeDotNet from "../../assets/icons/icone-dotnet.png";
-import IconeGit from "../../assets/icons/icone-git.png";
-import IconeVersionamento from "../../assets/icons/icone-versionamento.png";
-import IconeAWS from "../../assets/icons/icone-aws.png";
-import IconeDocker from "../../assets/icons/icone-docker.png";
+import IconeReact from "../../../../assets/icons/icone-react.png";
+import IconeTypeScript from "../../../../assets/icons/icone-typescript.png";
+import IconeJavaScript from "../../../../assets/icons/icone-javascript.png";
+import IconeHTML from "../../../../assets/icons/icone-html.png";
+import IconeCSS from "../../../../assets/icons/icone-css.png";
+import IconeStyled from "../../../../assets/icons/icone-styled.png";
+import IconeJava from "../../../../assets/icons/icone-java.png";
+import IconeSpring from "../../../../assets/icons/icone-spring-boot.png";
+import IconeDataBase from "../../../../assets/icons/icone-database.png";
+import IconeSecurity from "../../../../assets/icons/icone-security.png";
+import IconeTeste from "../../../../assets/icons/icone-teste.png";
+import IconeDotNet from "../../../../assets/icons/icone-dotnet.png";
+import IconeGit from "../../../../assets/icons/icone-git.png";
+import IconeVersionamento from "../../../../assets/icons/icone-versionamento.png";
+import IconeAWS from "../../../../assets/icons/icone-aws.png";
+import IconeDocker from "../../../../assets/icons/icone-docker.png";
 
 export const habilidades: Habilidade[] = [
     {

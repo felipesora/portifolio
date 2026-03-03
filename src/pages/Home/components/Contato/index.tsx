@@ -1,10 +1,10 @@
 import CardContato from "./CardContato";
-import IconeEmailBranco from "../../assets/icons/icone-email-branco.png";
-import IconeEmailPreto from "../../assets/icons/icone-email-preto.png";
-import IconeGithubBranco from "../../assets/icons/icone-github-branco.png";
-import IconeGithubPreto from "../../assets/icons/icone-github-preto.png";
-import IconeLinkedinBranco from "../../assets/icons/icone-linkedin-branco.png";
-import IconeLinkedinPreto from "../../assets/icons/icone-linkedin-preto.png";
+import IconeEmailBranco from "../../../../assets/icons/icone-email-branco.png";
+import IconeEmailPreto from "../../../../assets/icons/icone-email-preto.png";
+import IconeGithubBranco from "../../../../assets/icons/icone-github-branco.png";
+import IconeGithubPreto from "../../../../assets/icons/icone-github-preto.png";
+import IconeLinkedinBranco from "../../../../assets/icons/icone-linkedin-branco.png";
+import IconeLinkedinPreto from "../../../../assets/icons/icone-linkedin-preto.png";
 
 const Contato = () => {
     return (

@@ -1,10 +1,10 @@
-import HeroBg from "../../assets/images/fundo-hero-section.png";
-import IconeEmail from "../../assets/icons/icone-email-branco.png";
-import IconeDownloadBranco from "../../assets/icons/icone-download-branco.png";
-import IconeDownloadPreto from "../../assets/icons/icone-download-preto.png";
-import IconeScroll from "../../assets/icons/icone-scroll.png";
+import HeroBg from "../../../../assets/images/fundo-hero-section.png";
+import IconeEmail from "../../../../assets/icons/icone-email-branco.png";
+import IconeDownloadBranco from "../../../../assets/icons/icone-download-branco.png";
+import IconeDownloadPreto from "../../../../assets/icons/icone-download-preto.png";
+import IconeScroll from "../../../../assets/icons/icone-scroll.png";
 import { useEffect, useState } from "react";
-import { scrollToSection } from "../../utils/scrollToSection";
+import { scrollToSection } from "../../../../utils/scrollToSection";
 
 const Inicio = () => {
     const [is470, setIs470] = useState(false);

@@ -1,11 +1,8 @@
 export interface CardProjetoProps {
+    id: number;
     imagem: string;
     titulo: string;
     descricao: string;
-    tecnologias: Tecnologia[];
-    linkCodigo: string;
-    linkDeploy: string;
-    linkVideo: string;
 }
 
 export interface CardTecnologiaProps {

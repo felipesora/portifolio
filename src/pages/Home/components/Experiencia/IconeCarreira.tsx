@@ -1,5 +1,5 @@
-import IconeExperiencia from "../../assets/icons/icone-experiencia.png";
-import IconeEducacao from "../../assets/icons/icone-educacao.png";
+import IconeExperiencia from "../../../../assets/icons/icone-experiencia.png";
+import IconeEducacao from "../../../../assets/icons/icone-educacao.png";
 import type { IconeCarreiraProps } from "./types";
 
 const iconesPorTipo = {

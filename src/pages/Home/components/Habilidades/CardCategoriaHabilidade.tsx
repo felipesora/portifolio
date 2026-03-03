@@ -1,7 +1,7 @@
 import type { CardCategoriaHabilidadeProps } from "./types";
-import IconeFront from "../../assets/icons/icone-front-end.png";
-import IconeBack from "../../assets/icons/icone-back-end.png";
-import IconeFerramentas from "../../assets/icons/icone-ferramentas.png";
+import IconeFront from "../../../../assets/icons/icone-front-end.png";
+import IconeBack from "../../../../assets/icons/icone-back-end.png";
+import IconeFerramentas from "../../../../assets/icons/icone-ferramentas.png";
 import CardHabilidade from "./CardHabilidade";
 import { habilidades } from "./dataHabilidades";
 

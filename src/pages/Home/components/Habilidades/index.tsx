@@ -1,4 +1,4 @@
-import { useInView } from "../../hooks/useInView";
+import { useInView } from "../../../../hooks/useInView";
 import CardCategoriaHabilidade from "./CardCategoriaHabilidade";
 
 const Habilidades = () => {

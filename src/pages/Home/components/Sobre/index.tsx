@@ -1,5 +1,5 @@
-import FotoFelipe from "../../assets/images/foto-felipe.png";
-import { useInView } from "../../hooks/useInView";
+import FotoFelipe from "../../../../assets/images/foto-felipe.png";
+import { useInView } from "../../../../hooks/useInView";
 
 const Sobre = () => {
     const { ref, visible } = useInView<HTMLDivElement>();
