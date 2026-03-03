@@ -13,6 +13,8 @@ import IconeTeste from "../../assets/icons/icone-teste.png";
 import IconeDotNet from "../../assets/icons/icone-dotnet.png";
 import IconeGit from "../../assets/icons/icone-git.png";
 import IconeVersionamento from "../../assets/icons/icone-versionamento.png";
+import IconeAWS from "../../assets/icons/icone-aws.png";
+import IconeDocker from "../../assets/icons/icone-docker.png";
 
 export const habilidades: Habilidade[] = [
     {
@@ -108,17 +110,29 @@ export const habilidades: Habilidade[] = [
     {
         id: 16,
         categoria: "outros",
+        nome: "AWS",
+        icone: IconeAWS
+    },
+    {
+        id: 17,
+        categoria: "outros",
+        nome: "Docker",
+        icone: IconeDocker
+    },
+    {
+        id: 18,
+        categoria: "outros",
         nome: "Oracle",
         icone: IconeDataBase
     },
     {
-        id: 17,
+        id: 19,
         categoria: "outros",
         nome: "PostgreSQL",
         icone: IconeDataBase
     },
     {
-        id: 18,
+        id: 20,
         categoria: "outros",
         nome: "MySQL",
         icone: IconeDataBase
