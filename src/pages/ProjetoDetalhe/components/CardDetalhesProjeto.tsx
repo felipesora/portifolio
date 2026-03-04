@@ -3,8 +3,10 @@ import IconeYoutube from "../../../assets/icons/icone-youtube.png";
 import CardTecnologia from "./CardTecnologia";
 import { useParams } from "react-router-dom";
 import { projetos } from "../../../data/projetos/dataProjetos";
+import { useInView } from "../../../hooks/useInView";
 
 const CardDetalhesProjeto = () => {
+    const { ref, visible } = useInView<HTMLDivElement>();
     const { id } = useParams();
 
     const projeto = projetos.find(
@@ -16,7 +18,7 @@ const CardDetalhesProjeto = () => {
     }
 
     return (
-        <div className="bg-white w-[80%] rounded-[10px] shadow-sm [@media(max-width:1375px)]:w-full">
+        <div ref={ref} className={`bg-white w-[80%] rounded-[10px] shadow-sm transition-all duration-700 ease-in-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"} [@media(max-width:1375px)]:w-full`}>
 
             <img src={projeto.imagem} alt={`Imagem do projeto ${projeto.titulo}`} className="w-full h-[200px] object-cover object-top rounded-t-[10px] border-b border-gray-300 2xl:h-125 xl:h-[450px] lg:h-[350px] md:h-[400px] sm:h-[250px]" />
 
