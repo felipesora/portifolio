@@ -2,10 +2,17 @@ import { useState } from "react";
 import Logo from "../../assets/images/logo.png";
 import MenuAbrir from "../../assets/icons/icone-menu-lateral.png";
 import MenuFechar from "../../assets/icons/icone-menu-fechar.png";
+import IconeVoltar from "../../assets/icons/icone-voltar.png";
 import { scrollToSection } from "../../utils/scrollToSection";
+import { useNavigate } from "react-router-dom";
 
-const Cabecalho = () => {
+interface CabecalhoProps {
+  tipo?: "home" | "detalhesProjeto";
+}
+
+const Cabecalho = ({ tipo = "home" }: CabecalhoProps) => {
     const [menuAberto, setMenuAberto] = useState(false);
+    const navigate = useNavigate();
 
     const handleNavigate = (section: string) => {
         scrollToSection(section);
@@ -29,21 +36,34 @@ const Cabecalho = () => {
             </button>
         
             {/* Menu Desktop */}
-            <nav className="hidden lg:block">
-                <ul className="flex gap-7">
-                    {secoes.map(([id, label]) => (
-                        <li key={id}>
-                            <button onClick={() => scrollToSection(id)} className="nav-link-header">{label}</button>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+
+            {tipo === "home" ? (
+                <nav className="hidden lg:block">
+                    <ul className="flex gap-7">
+                        {secoes.map(([id, label]) => (
+                            <li key={id}>
+                                <button onClick={() => scrollToSection(id)} className="nav-link-header">{label}</button>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            ) : (
+                <>
+                    <button onClick={() => navigate(-1)} className="text-white flex gap-2 items-center border border-white/20 p-2 rounded-[5px] cursor-pointer transition-all duration-200 hover:bg-white/10 active:scale-95 [@media(max-width:570px)]:p-1">
+                        <img src={IconeVoltar} alt="Ícone de voltar" className="w-6 h-6" />
+                        Voltar
+                    </button>
+                </>
+            )}
+            
 
             {/* Botão Menu Mobile */}
-            <button className="lg:hidden border border-white/20 p-1.5 rounded-[5px] cursor-pointer transition-all duration-200 hover:bg-white/10 active:scale-95 [@media(max-width:570px)]:p-1" onClick={() => setMenuAberto(true)} aria-label="Abrir menu">
-                <img src={MenuAbrir} alt="ícone de menu" className="w-7 [@media(max-width:570px)]:w-6" />
-            </button>
-
+            {tipo === "home" && (
+                <button className="lg:hidden border border-white/20 p-1.5 rounded-[5px] cursor-pointer transition-all duration-200 hover:bg-white/10 active:scale-95 [@media(max-width:570px)]:p-1" onClick={() => setMenuAberto(true)} aria-label="Abrir menu">
+                    <img src={MenuAbrir} alt="ícone de menu" className="w-7 [@media(max-width:570px)]:w-6" />
+                </button>
+            )}
+            
             {/* Overlay */}
             {menuAberto && (
                 <div className="fixed inset-0 bg-black/50 z-40" onClick={() => setMenuAberto(false)} />

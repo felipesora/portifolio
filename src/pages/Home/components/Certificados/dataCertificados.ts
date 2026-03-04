@@ -43,4 +43,10 @@ export const certificados: Certificado[] = [
         instituicao: "Alura",
         link: "https://drive.google.com/file/d/1QUE-Vk7EE9Gg07YV783N48L4dPnCBz3p/view?usp=sharing"
     },
+    {
+        id: 7,
+        nome: "Docker",
+        instituicao: "Alura",
+        link: "https://drive.google.com/file/d/1ngS63_fHQGq_JhrMZh2gFYQ7r0-0TVPK/view?usp=sharing"
+    },
 ];

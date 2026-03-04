@@ -15,6 +15,7 @@ export interface Projeto {
     titulo: string;
     descricao: string;
     tecnologias: Tecnologia[];
+    galeria?: ImagemGaleria[];
     linkCodigo: string;
     linkDeploy: string;
     linkVideo: string;
@@ -22,4 +23,8 @@ export interface Projeto {
 
 interface Tecnologia {
     titulo: string;
+}
+
+interface ImagemGaleria {
+    imagem: string;
 }

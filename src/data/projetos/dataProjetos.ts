@@ -1,13 +1,19 @@
 
-import LifeBoard from "./images/lifeboard.png";
-import NextStep from "./images/nextstep.png";
-import MotoTrack from "./images/mototrack.png";
+import LifeBoardDashboard from "./images/lifeboard-dashboard.png";
+import LifeBoardKanban from "./images/lifeboard-kanban.png";
+import LifeBoardTransacoes from "./images/lifeboard-transacoes.png";
+import NextStepDashboard from "./images/nextstep-dashboard.png";
+import NextStepTrilhas from "./images/nextstep-trilhas.png";
+import NextStepConteudos from "./images/nextstep-conteudos.png";
+import MotoTrackMotos from "./images/mototrack-motos.png";
+import MotoTrackMovimentacoes from "./images/mototrack-movimentacoes.png";
+import MotoTrackAlertas from "./images/mototrack-alertas.png";
 import type { Projeto } from "../../types/ProjetoTypes";
 
 export const projetos: Projeto[] = [
     {
         id: 1,
-        imagem: LifeBoard,
+        imagem: LifeBoardDashboard,
         titulo: "LifeBoard",
         descricao: "LifeBoard é uma plataforma integrada de gestão financeira e produtividade pessoal, que centraliza controle de finanças, metas e tarefas em um ambiente moderno e intuitivo, facilitando a organização do dia a dia e a tomada de decisões.",
         linkCodigo: "https://github.com/felipesora/LifeBoard",
@@ -35,11 +41,31 @@ export const projetos: Projeto[] = [
             {
                 titulo: "Styled-Components"
             },
+            {
+                titulo: "Docker"
+            },
+            {
+                titulo: "Docker Compose"
+            },
+            {
+                titulo: "PostgreSQL"
+            },
+        ],
+        galeria: [
+            {
+                imagem: LifeBoardDashboard
+            },
+            {
+                imagem: LifeBoardKanban
+            },
+            {
+                imagem: LifeBoardTransacoes
+            },
         ]
     },
     {
         id: 2,
-        imagem: NextStep,
+        imagem: NextStepTrilhas,
         titulo: "NextStep",
         descricao: "NextStep é uma plataforma educacional que oferece trilhas de aprendizado personalizadas em Backend, Frontend, Cloud e IA, integrando painel administrativo e aplicativo mobile em um ambiente moderno e inteligente.",
         linkCodigo: "https://github.com/felipesora/nextstep-frontend-web",
@@ -73,11 +99,22 @@ export const projetos: Projeto[] = [
             {
                 titulo: "React Native"
             },
+        ],
+        galeria: [
+            {
+                imagem: NextStepDashboard
+            },
+            {
+                imagem: NextStepTrilhas
+            },
+            {
+                imagem: NextStepConteudos
+            },
         ]
     },
     {
         id: 3,
-        imagem: MotoTrack,
+        imagem: MotoTrackMotos,
         titulo: "MotoTrack",
         descricao: "MotoTrack é uma plataforma de gestão de frotas para empresas de aluguel de motos, centralizando controle de pátios, manutenções e disponibilidade dos veículos, garantindo organização e eficiência operacional.",
         linkCodigo: "https://github.com/mototrack-challenge/mototrack-backend-mvc-java",
@@ -113,6 +150,17 @@ export const projetos: Projeto[] = [
             },
             {
                 titulo: "Azure for Deploy"
+            },
+        ],
+        galeria: [
+            {
+                imagem: MotoTrackMotos
+            },
+            {
+                imagem: MotoTrackMovimentacoes
+            },
+            {
+                imagem: MotoTrackAlertas
             },
         ]
     },

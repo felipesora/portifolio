@@ -1,4 +1,3 @@
-import Imagem from "../../../data/projetos/images/lifeboard.png";
 import IconeGithub from "../../../assets/icons/icone-github-branco.png";
 import IconeYoutube from "../../../assets/icons/icone-youtube.png";
 import CardTecnologia from "./CardTecnologia";
@@ -17,7 +16,7 @@ const CardDetalhesProjeto = () => {
     }
 
     return (
-        <div className="bg-white w-full rounded-[10px] shadow-sm">
+        <div className="bg-white w-[80%] rounded-[10px] shadow-sm">
 
             <img src={projeto.imagem} alt={`Imagem do projeto ${projeto.titulo}`} className="w-full h-125 object-cover object-top rounded-t-[10px]" />
 
@@ -30,9 +29,9 @@ const CardDetalhesProjeto = () => {
                 <div className="flex flex-col gap-4">
                     <h2 className="font-bold text-2xl [@media(max-width:550px)]:text-xl">Galeria</h2>
                     <div className="flex justify-between">
-                        <img src={Imagem} alt="" className="w-112.5 rounded-[10px]" />
-                        <img src={Imagem} alt="" className="w-112.5 rounded-[10px]" />
-                        <img src={Imagem} alt="" className="w-112.5 rounded-[10px]" />
+                        {projeto.galeria?.map((imagem) => (
+                            <img src={imagem.imagem} alt="Imagem do projeto" className="w-112.5 rounded-[10px] transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-xl" />
+                        ))}
                     </div>
                 </div>
 

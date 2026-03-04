@@ -11,7 +11,7 @@ import Sobre from "./components/Sobre";
 const Home = () => {
     return (
         <>
-          <Cabecalho />
+          <Cabecalho tipo="home"/>
           <Inicio />
           <Sobre />
           <Experiencia />
