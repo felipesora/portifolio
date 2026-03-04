@@ -1,7 +1,8 @@
-import type { Projeto } from "./types";
+
 import LifeBoard from "./images/lifeboard.png";
 import NextStep from "./images/nextstep.png";
 import MotoTrack from "./images/mototrack.png";
+import type { Projeto } from "../../types/ProjetoTypes";
 
 export const projetos: Projeto[] = [
     {

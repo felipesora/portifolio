@@ -1,6 +1,6 @@
+import { projetos } from "../../../../data/projetos/dataProjetos";
 import { useInView } from "../../../../hooks/useInView";
 import CardProjeto from "./CardProjeto";
-import { projetos } from "./dataProjetos";
 
 const Projetos = () => {
     const { ref, visible } = useInView<HTMLDivElement>();

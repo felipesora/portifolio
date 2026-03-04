@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import IconeVerMais from "../../../../assets/icons/icone-ver-mais.png";
-import type { CardProjetoProps } from "./types";
+import type { CardProjetoProps } from "../../../../types/ProjetoTypes";
 
 const CardProjeto = ({ id, imagem, titulo, descricao }: CardProjetoProps) => {
     const navigate = useNavigate();

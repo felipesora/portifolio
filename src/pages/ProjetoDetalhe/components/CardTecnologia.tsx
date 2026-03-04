@@ -1,4 +1,4 @@
-import type { CardTecnologiaProps } from "./types";
+import type { CardTecnologiaProps } from "../../../types/ProjetoTypes";
 
 const CardTecnologia = ({ nome }: CardTecnologiaProps) => {
     return (
