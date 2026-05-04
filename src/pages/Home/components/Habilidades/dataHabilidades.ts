@@ -15,6 +15,13 @@ import IconeGit from "../../../../assets/icons/icone-git.png";
 import IconeVersionamento from "../../../../assets/icons/icone-versionamento.png";
 import IconeAWS from "../../../../assets/icons/icone-aws.png";
 import IconeDocker from "../../../../assets/icons/icone-docker.png";
+import IconeAngular from "../../../../assets/icons/icone-angular.png";
+import IconeRabbitMQ from "../../../../assets/icons/icone-rabbitmq.png";
+import IconeMensageria from "../../../../assets/icons/icone-mensageria.png";
+import IconeMicrosservicos from "../../../../assets/icons/icone-microsservicos.png";
+import IconePostgreSQL from "../../../../assets/icons/icone-postgresql.png";
+import IconeOracle from "../../../../assets/icons/icone-oracle.png";
+import IconeMySql from "../../../../assets/icons/icone-mysql.png";
 
 export const habilidades: Habilidade[] = [
     {
@@ -26,115 +33,139 @@ export const habilidades: Habilidade[] = [
     {
         id: 2,
         categoria: "front",
+        nome: "Angular",
+        icone: IconeAngular
+    },
+    {
+        id: 3,
+        categoria: "front",
         nome: "TypeScript",
         icone: IconeTypeScript
     },
     {
-        id: 3,
+        id: 4,
         categoria: "front",
         nome: "JavaScript",
         icone: IconeJavaScript
     },
     {
-        id: 4,
+        id: 5,
         categoria: "front",
         nome: "HTML 5",
         icone: IconeHTML
     },
     {
-        id: 5,
+        id: 6,
         categoria: "front",
         nome: "CSS 3",
         icone: IconeCSS
     },
     {
-        id: 6,
+        id: 7,
         categoria: "front",
         nome: "Styled Components",
         icone: IconeStyled
     },
     {
-        id: 7,
+        id: 8,
         categoria: "front",
         nome: "Tailwind",
         icone: IconeStyled
     },
     {
-        id: 8,
+        id: 9,
         categoria: "back",
         nome: "Java",
         icone: IconeJava
     },
     {
-        id: 9,
+        id: 10,
         categoria: "back",
         nome: "Spring Boot",
         icone: IconeSpring
     },
     {
-        id: 10,
+        id: 11,
         categoria: "back",
         nome: "JPA & Hibernate",
         icone: IconeDataBase
     },
     {
-        id: 11,
+        id: 12,
         categoria: "back",
         nome: "Spring Security",
         icone: IconeSecurity
     },
     {
-        id: 12,
+        id: 13,
         categoria: "back",
         nome: "JUnit & Mockito",
         icone: IconeTeste
     },
     {
-        id: 13,
+        id: 14,
         categoria: "back",
         nome: ".NET",
         icone: IconeDotNet
     },
     {
-        id: 14,
+        id: 15,
+        categoria: "back",
+        nome: "RabbitMQ",
+        icone: IconeRabbitMQ
+    },
+    {
+        id: 16,
+        categoria: "back",
+        nome: "Microsserviços",
+        icone: IconeMicrosservicos
+    },
+    {
+        id: 17,
+        categoria: "back",
+        nome: "Mensageria",
+        icone: IconeMensageria
+    },
+    {
+        id: 18,
         categoria: "outros",
         nome: "Git e Github",
         icone: IconeGit
     },
     {
-        id: 15,
+        id: 19,
         categoria: "outros",
         nome: "Versionamento",
         icone: IconeVersionamento
     },
     {
-        id: 16,
+        id: 20,
         categoria: "outros",
         nome: "AWS",
         icone: IconeAWS
     },
     {
-        id: 17,
+        id: 21,
         categoria: "outros",
         nome: "Docker",
         icone: IconeDocker
     },
     {
-        id: 18,
+        id: 22,
         categoria: "outros",
         nome: "Oracle",
-        icone: IconeDataBase
+        icone: IconeOracle
     },
     {
-        id: 19,
+        id: 23,
         categoria: "outros",
         nome: "PostgreSQL",
-        icone: IconeDataBase
+        icone: IconePostgreSQL
     },
     {
-        id: 20,
+        id: 24,
         categoria: "outros",
         nome: "MySQL",
-        icone: IconeDataBase
+        icone: IconeMySql
     },
 ];
