@@ -2,7 +2,7 @@ export interface CardProjetoProps {
     id: number;
     imagem: string;
     titulo: string;
-    descricao: string;
+    descricaoPequena: string;
 }
 
 export interface CardTecnologiaProps {
@@ -13,11 +13,12 @@ export interface Projeto {
     id: number;
     imagem: string;
     titulo: string;
-    descricao: string;
+    descricaoPequena: string;
+    descricaoLonga: string[];
     tecnologias: Tecnologia[];
     galeria?: ImagemGaleria[];
     linkCodigo: string;
-    linkDeploy: string;
+    linkDeploy?: string;
     linkVideo: string;
 }
 

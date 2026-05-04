@@ -25,7 +25,12 @@ const CardDetalhesProjeto = () => {
             <div className="flex flex-col gap-7 p-12 [@media(max-width:1000px)]:px-7">
                 <div className="flex flex-col gap-4">
                     <h1 className="text-4xl font-bold [@media(max-width:550px)]:text-2xl">{projeto.titulo}</h1>
-                    <p className="text-base text-justify text-[#6C757D] [@media(max-width:550px)]:text-sm">{projeto.descricao}</p>
+
+                    {projeto.descricaoLonga.map((paragrafo, index) => (
+                        <p key={index} className="text-base text-justify text-[#6C757D] indent-4 [@media(max-width:550px)]:text-sm">
+                            {paragrafo}
+                        </p>
+                    ))}
                 </div>
 
                 <div className="flex flex-col gap-4 [@media(max-width:1023px)]:hidden">

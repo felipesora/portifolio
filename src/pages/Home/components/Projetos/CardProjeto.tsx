@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import IconeVerMais from "../../../../assets/icons/icone-ver-mais.png";
 import type { CardProjetoProps } from "../../../../types/ProjetoTypes";
 
-const CardProjeto = ({ id, imagem, titulo, descricao }: CardProjetoProps) => {
+const CardProjeto = ({ id, imagem, titulo, descricaoPequena }: CardProjetoProps) => {
     const navigate = useNavigate();
 
     return (
@@ -14,7 +14,7 @@ const CardProjeto = ({ id, imagem, titulo, descricao }: CardProjetoProps) => {
                 
                 <div className="flex flex-col gap-3">
                     <h4 className="font-bold text-2xl [@media(max-width:550px)]:text-xl">{titulo}</h4>
-                    <p className="text-[#6C757D] text-justify [@media(max-width:550px)]:text-[14px]">{descricao}</p>
+                    <p className="text-[#6C757D] text-justify [@media(max-width:550px)]:text-[14px]">{descricaoPequena}</p>
                 </div>
 
                 <div className="flex flex-col gap-3 mt-5">
