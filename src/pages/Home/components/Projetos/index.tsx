@@ -20,7 +20,7 @@ const Projetos = () => {
                         id={projeto.id}
                         imagem={projeto.imagem}
                         titulo={projeto.titulo}
-                        descricao={projeto.descricao}
+                        descricaoPequena={projeto.descricaoPequena}
                     />
                 ))}
             </div>

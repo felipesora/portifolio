@@ -22,6 +22,7 @@ import IconeMicrosservicos from "../../../../assets/icons/icone-microsservicos.p
 import IconePostgreSQL from "../../../../assets/icons/icone-postgresql.png";
 import IconeOracle from "../../../../assets/icons/icone-oracle.png";
 import IconeMySql from "../../../../assets/icons/icone-mysql.png";
+import IconeMongoDB from "../../../../assets/icons/icone-mongodb.png";
 
 export const habilidades: Habilidade[] = [
     {
@@ -167,5 +168,11 @@ export const habilidades: Habilidade[] = [
         categoria: "outros",
         nome: "MySQL",
         icone: IconeMySql
+    },
+    {
+        id: 25,
+        categoria: "outros",
+        nome: "MongoDB",
+        icone: IconeMongoDB
     },
 ];
