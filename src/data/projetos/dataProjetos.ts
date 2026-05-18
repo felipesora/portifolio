@@ -12,12 +12,16 @@ import TechMarketInicio from "./images/techmarket-inicio.jpeg";
 import TechMarketProduto from "./images/techmarket-produto.jpeg";
 import TechMarketCarrinho from "./images/techmarket-carrinho.jpeg";
 import TechMarketDashboard from "./images/techmarket-dashboard.jpeg";
+import ThumbnailTechMarket from "./images/thumbnail-techmarket.png";
+import ThumbnailLifeBoard from "./images/thumbnail-lifeboard.png";
+import ThumbnailNextStep from "./images/thumbnail-nextstep.png";
+import ThumbnailMotoTrack from "./images/thumbnail-mototrack.png";
 import type { Projeto } from "../../types/ProjetoTypes";
 
 export const projetos: Projeto[] = [
     {
         id: 1,
-        imagem: TechMarketInicio,
+        imagem: ThumbnailTechMarket,
         titulo: "TechMarket",
         descricaoPequena: "TechMarket é uma plataforma de e-commerce baseada em microsserviços, que centraliza o gerenciamento de produtos, carrinho e pedidos em um ambiente moderno, seguro e escalável, utilizando tecnologias como Java, Angular e múltiplos bancos de dados.",
         descricaoLonga: [
@@ -99,7 +103,7 @@ export const projetos: Projeto[] = [
     },
     {
         id: 2,
-        imagem: LifeBoardDashboard,
+        imagem: ThumbnailLifeBoard,
         titulo: "LifeBoard",
         descricaoPequena: "LifeBoard é uma plataforma integrada de gestão financeira e produtividade pessoal, que centraliza controle de finanças, metas e tarefas em um ambiente moderno e intuitivo, facilitando a organização do dia a dia e a tomada de decisões.",
         descricaoLonga: [
@@ -157,7 +161,7 @@ export const projetos: Projeto[] = [
     },
     {
         id: 3,
-        imagem: NextStepTrilhas,
+        imagem: ThumbnailNextStep,
         titulo: "NextStep",
         descricaoPequena: "NextStep é uma plataforma educacional que oferece trilhas de aprendizado personalizadas em Backend, Frontend, Cloud e IA, integrando painel administrativo e aplicativo mobile em um ambiente moderno e inteligente.",
         descricaoLonga: [
@@ -212,7 +216,7 @@ export const projetos: Projeto[] = [
     },
     {
         id: 4,
-        imagem: MotoTrackMotos,
+        imagem: ThumbnailMotoTrack,
         titulo: "MotoTrack",
         descricaoPequena: "MotoTrack é uma plataforma de gestão de frotas para empresas de aluguel de motos, centralizando controle de pátios, manutenções e disponibilidade dos veículos, garantindo organização e eficiência operacional.",
         descricaoLonga: [
