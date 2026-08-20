@@ -4,7 +4,7 @@ export const itensCarreira: ItemCarreira[] = [
     {
         id: 1,
         tipo: "experiencia",
-        data: "03/2025 - 07/2026",
+        data: "03/2025 - 08/2026",
         titulo: "Aprendiz de TI",
         instituicao: "SPDM/PAIS",
         descricao: "Atuo na área de tecnologia apoiando atividades de desenvolvimento, manutenção e suporte a sistemas, contribuindo para a melhoria de processos e operação das soluções utilizadas pela instituição. Participo de demandas técnicas reais, aplicando boas práticas, organização e responsabilidade, enquanto evoluo continuamente minhas habilidades como desenvolvedor."
@@ -12,7 +12,7 @@ export const itensCarreira: ItemCarreira[] = [
     {
         id: 2,
         tipo: "experiencia",
-        data: "07/2026 - Presente",
+        data: "09/2026 - Presente",
         titulo: "Assistente de Programação",
         instituicao: "SPDM/PAIS",
         descricao: "Como Assistente de Programação, participo do desenvolvimento de soluções de software, implementando novas funcionalidades, realizando manutenção corretiva e evolutiva e contribuindo para a melhoria contínua dos sistemas. Trabalho em conjunto com a equipe de desenvolvimento utilizando boas práticas de programação, controle de versão e metodologias de desenvolvimento, buscando entregar aplicações seguras, organizadas e de qualidade."
