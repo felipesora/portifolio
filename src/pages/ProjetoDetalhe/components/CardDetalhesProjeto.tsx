@@ -4,12 +4,27 @@ import CardTecnologia from "./CardTecnologia";
 import { useParams } from "react-router-dom";
 import { projetos } from "../../../data/projetos/dataProjetos";
 import { useInView } from "../../../hooks/useInView";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const CardDetalhesProjeto = () => {
     const [imagemSelecionada, setImagemSelecionada] = useState<string | null>(null);
+    const [imagemZoom, setImagemZoom] = useState(false);
+    const [origemZoom, setOrigemZoom] = useState({ x: 50, y: 50 });
+    
     const { ref, visible } = useInView<HTMLDivElement>();
     const { id } = useParams();
+
+    useEffect(() => {
+        if (imagemSelecionada) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [imagemSelecionada]);
 
     const projeto = projetos.find(
         (p) => p.id === Number(id)
@@ -76,12 +91,49 @@ const CardDetalhesProjeto = () => {
             </div>
 
             {imagemSelecionada && (
-                <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-6" onClick={() => setImagemSelecionada(null)}>
-                    <button type="button" onClick={() => setImagemSelecionada(null)} className="absolute top-6 right-6 text-white text-4xl font-light hover:text-gray-300 transition-colors cursor-pointer" aria-label="Fechar imagem">
+                <div
+                    className="fixed inset-0 z-50 bg-black/80 overflow-auto p-6"
+                    onClick={() => {
+                        setImagemSelecionada(null);
+                        setImagemZoom(false);
+                    }}
+                >
+                    <button
+                        type="button"
+                        onClick={() => {
+                            setImagemSelecionada(null);
+                            setImagemZoom(false);
+                        }}
+                        className="fixed top-6 right-6 text-white text-4xl font-light hover:text-gray-300 transition-colors cursor-pointer z-10"
+                        aria-label="Fechar imagem"
+                    >
                         &times;
                     </button>
 
-                    <img src={imagemSelecionada} alt="Imagem ampliada do projeto" onClick={(e) => e.stopPropagation()} className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl" />
+                    <div className="min-h-full flex items-center justify-center">
+                        <img
+                            src={imagemSelecionada}
+                            alt="Imagem ampliada do projeto"
+                            onClick={(e) => {
+                                e.stopPropagation();
+
+                                if (!imagemZoom) {
+                                    const rect = e.currentTarget.getBoundingClientRect();
+                                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                                    setOrigemZoom({ x, y });
+                                }
+
+                                setImagemZoom(!imagemZoom);
+                            }}
+                            style={{ transformOrigin: `${origemZoom.x}% ${origemZoom.y}%` }}
+                            className={`object-contain rounded-lg shadow-2xl transition-transform duration-300 ${
+                                imagemZoom
+                                    ? "scale-150 cursor-zoom-out"
+                                    : "max-w-[90vw] max-h-[90vh] cursor-zoom-in"
+                            }`}
+                        />
+                    </div>
                 </div>
             )}
         </>
