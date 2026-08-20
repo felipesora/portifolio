@@ -51,18 +51,18 @@ const CardDetalhesProjeto = () => {
                         ))}
                     </div>
 
-                    <div className="flex flex-col gap-4 [@media(max-width:1023px)]:hidden">
+                    <div className="flex flex-col gap-4">
                         <h2 className="font-bold text-2xl [@media(max-width:550px)]:text-xl">
                             Galeria
                         </h2>
-                        <div className="grid grid-cols-2 gap-6">
+                        <div className="grid grid-cols-2 gap-6 [@media(max-width:700px)]:grid-cols-1 [@media(max-width:700px)]:gap-4">
                             {projeto.galeria?.map((imagem, index) => (
                                 <img
                                     key={index}
                                     src={imagem.imagem} 
                                     alt="Imagem do projeto"
                                     onClick={() => setImagemSelecionada(imagem.imagem)}
-                                    className="w-full rounded-[10px] cursor-pointer transition-all duration-300 hover:shadow-xl hover:opacity-90" 
+                                    className="w-full rounded-[10px] border border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-md hover:opacity-90 hover:border-gray-300" 
                                 />
                             ))}
                         </div>
